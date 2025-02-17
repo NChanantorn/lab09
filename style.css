@@ -240,3 +240,20 @@ h1 {
     background: #218838;
 }
 
+/* ส่วนของความคิดเห็น */
+.comments-section {
+    background: #f9f9f9;
+    padding: 10px;
+    margin-top: 10px;
+    border-left: 3px solid #007BFF;
+    display: none;
+}
+
+.comment-item {
+    background: #fff;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
