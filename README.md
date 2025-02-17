@@ -1,1 +1,38 @@
 # lab09
+git commands use in this lab
+- git add .
+- git commit -m "สร้างโครงสร้างโปรเจกต์"
+- git checkout -b develop
+- git checkout -b feature-fetch-users
+- git add index.html script.js
+- git commit -m "เพิ่มฟังก์ชัน fetch รายชื่อผู้ใช้จาก API"
+- git checkout develop
+- git merge feature-fetch-users
+- git branch -d feature-fetch-users
+- git checkout -b feature-user-detail
+- git add user-detail.html user-detail.js
+- git commit -m "เพิ่มฟังก์ชันแสดงรายละเอียดผู้ใช้"
+- git checkout develop
+- git merge feature-user-detail
+- git branch -d feature-user-detail
+- git checkout -b feature-user-posts
+- git add user-posts.html user-posts.js
+- git commit -m "เพิ่มฟังก์ชันแสดงโพสต์ของผู้ใช้"
+- git checkout develop
+- git merge feature-user-posts
+- git branch -d feature-user-posts
+- git checkout -b feature-toggle-comments
+- git add user-posts.js
+- git commit -m "เพิ่มฟังก์ชันดู/ซ่อนความคิดเห็นของโพสต์"
+- git checkout develop
+- git merge feature-toggle-comments
+- git branch -d feature-toggle-comments
+- git add . 
+- git commit -m "ตกแต่งหน้า index"
+- git add .
+- git commit -m "ตกแต่งหน้า user-detail"
+- git add .
+- git commit -m "ตกแต่งหน้า user-posts"
+- git checkout main
+- git merge develop
+- git push origin main
