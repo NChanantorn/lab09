@@ -8,7 +8,14 @@ document.addEventListener("DOMContentLoaded", () => {
             const postList = document.getElementById("posts-list");
             posts.forEach(post => {
                 const div = document.createElement("div");
-                div.innerHTML = `<h3>${post.title}</h3><p>${post.body}</p>`;
+                div.classList.add("post-item");
+
+                div.innerHTML = `
+                    <h3>${post.title}</h3>
+                    <p>${post.body}</p>
+                    <button class="view-comments-btn" data-post-id="${post.id}">ดูความคิดเห็น</button>
+                `;
+
                 postList.appendChild(div);
             });
         })

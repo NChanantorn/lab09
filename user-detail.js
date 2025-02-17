@@ -14,6 +14,11 @@ document.addEventListener("DOMContentLoaded", () => {
                 <p><span>ที่อยู่</span><br>${user.address.street}, ${user.address.suite}, ${user.address.city}, ${user.address.zipcode}</p>
                 <p><span>บริษัท</span><br>${user.company.name}<br>${user.company.catchPhrase}</p>
             `;
+
+            // อัปเดตลิงก์ของปุ่มดูโพสต์ทั้งหมด
+            document.getElementById("view-posts").addEventListener("click", () => {
+                window.location.href = `user-posts.html?id=${userId}`;
+            });
         })
         .catch(error => console.error("Error fetching user details:", error));
 });
