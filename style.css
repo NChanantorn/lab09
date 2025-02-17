@@ -1,0 +1,72 @@
+/* ตั้งค่าพื้นฐาน */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* คอนเทนเนอร์หลัก */
+.container {
+    width: 50%;
+    background: white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* หัวข้อ */
+h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* รายชื่อผู้ใช้ */
+.user-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* รายการผู้ใช้ */
+.user-item {
+    padding: 15px;
+    background: #f8f8f8;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+    cursor: pointer;
+    border: 1px solid #ddd;
+}
+
+.user-item:hover {
+    background: #e0e0e0;
+}
+
+/* ชื่อผู้ใช้ */
+.user-name {
+    font-weight: bold;
+    font-size: 16px;
+    color: #333;
+    text-decoration: none;
+}
+
+/* อีเมล */
+.user-email {
+    font-size: 14px;
+    color: #666;
+    display: block;
+    margin-top: 5px;
+}
+
+/* เปลี่ยนเป็น cursor pointer */
+.user-item a {
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    width: 100%;
+}

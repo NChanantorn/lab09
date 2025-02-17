@@ -5,7 +5,15 @@ document.addEventListener("DOMContentLoaded", () => {
             const userList = document.getElementById("user-list");
             users.forEach(user => {
                 const div = document.createElement("div");
-                div.innerHTML = `<p><a href="user-detail.html?id=${user.id}">${user.name}</a></p>`;
+                div.classList.add("user-item");
+
+                div.innerHTML = `
+                    <a href="user-detail.html?id=${user.id}">
+                        <span class="user-name">${user.name}</span>
+                        <span class="user-email">${user.email}</span>
+                    </a>
+                `;
+
                 userList.appendChild(div);
             });
         })
