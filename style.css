@@ -70,3 +70,86 @@ h1 {
     padding: 10px;
     width: 100%;
 }
+
+/* ตั้งค่าพื้นฐาน */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* คอนเทนเนอร์หลัก */
+.container {
+    width: 50%;
+    background: white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* ปุ่มกลับ */
+.back-button {
+    display: block;
+    text-decoration: none;
+    color: #007BFF;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.back-button:hover {
+    text-decoration: underline;
+}
+
+/* กล่องแสดงรายละเอียดผู้ใช้ */
+.user-detail {
+    background: #f8f8f8;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+/* ชื่อผู้ใช้ */
+.user-detail h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* รายละเอียดอื่น ๆ */
+.user-detail p {
+    font-size: 16px;
+    color: #555;
+    margin: 5px 0;
+}
+
+.user-detail p span {
+    font-weight: bold;
+    color: #333;
+}
+
+/* ปุ่มดูโพสต์ทั้งหมด */
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.view-posts-btn {
+    background: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+.view-posts-btn:hover {
+    background: #0056b3;
+}
+

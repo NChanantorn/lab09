@@ -7,10 +7,12 @@ document.addEventListener("DOMContentLoaded", () => {
         .then(user => {
             document.getElementById("user-detail").innerHTML = `
                 <h2>${user.name}</h2>
-                <p>Username: ${user.username}</p>
-                <p>Email: ${user.email}</p>
-                <p>Phone: ${user.phone}</p>
-                <p>Website: <a href="https://${user.website}" target="_blank">${user.website}</a></p>
+                <p><span>อีเมล</span><br>${user.email}</p>
+                <p><span>ชื่อผู้ใช้</span><br>${user.username}</p>
+                <p><span>เบอร์โทรศัพท์</span><br>${user.phone}</p>
+                <p><span>เว็บไซต์</span><br>${user.website}</p>
+                <p><span>ที่อยู่</span><br>${user.address.street}, ${user.address.suite}, ${user.address.city}, ${user.address.zipcode}</p>
+                <p><span>บริษัท</span><br>${user.company.name}<br>${user.company.catchPhrase}</p>
             `;
         })
         .catch(error => console.error("Error fetching user details:", error));
